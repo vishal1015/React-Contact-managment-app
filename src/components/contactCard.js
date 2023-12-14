@@ -11,8 +11,8 @@ const ContactCard= (props)=>{
                     <div>{name}</div>
                     <div>{email}</div>
                     <i className="fa-solid fa-trash"
-                        style={{color:"red",merginTop: "7px"}}
-                        /*onClick={()=>props.clickHandler(id) }*/
+                        style={{ color:"red",merginTop: "7px"}}
+                        onClick={()=>props.clickHandler(id) }
                     ></i>
                 </div>
             </div>
