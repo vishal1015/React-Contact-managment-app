@@ -1,4 +1,5 @@
 import React from "react";
+import 'font-awesome/css/font-awesome.min.css';
 // not able to import the images 
 // import user.png from "../images/user.png"
 const ContactCard= (props)=>{
@@ -9,8 +10,10 @@ const ContactCard= (props)=>{
                 <div>
                     <div>{name}</div>
                     <div>{email}</div>
-                    <i
-                    style={{background:"red"}}>⌚</i>
+                    <i className="fa-solid fa-trash"
+                        style={{color:"red",merginTop: "7px"}}
+                        /*onClick={()=>props.clickHandler(id) }*/
+                    ></i>
                 </div>
             </div>
     )
