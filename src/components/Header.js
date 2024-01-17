@@ -1,9 +1,9 @@
 import React  from "react";
-
+import  "./App.css"
 const Header = () =>{
     return (
-      <div className="ui fixed menu">
-        <div className="ui container center">
+      <div className="myheader">
+        <div>
             <h2>Contact Manager</h2>
         </div>
       </div>

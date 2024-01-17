@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ContactCard from "./contactCard";
+import "./App.css"
 //access props
 const ContactList = (props) => {
   console.log(props);
@@ -14,7 +15,7 @@ const ContactList = (props) => {
   // }]
   const renderCotactList = props.contacts.map((contact) => {
     return (
-      <div>
+      <div class = "contactcard">
         <ContactCard
           contact={contact}
           clickHandler={deletContactHandler}
