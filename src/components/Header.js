@@ -1,13 +1,22 @@
-import React  from "react";
-import  "./App.css"
-const Header = () =>{
-    return (
-      <div className="myheader">
-        <div>
-            <h2>Contact Manager</h2>
-        </div>
-      </div>
-    );
-};
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
-export default Header;
+function ColorSchemesExample() {
+  return (
+    <>
+      <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">C-Management</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Friends</Nav.Link>
+            <Nav.Link href="#pricing">All</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
+  );
+}
+
+export default ColorSchemesExample;

@@ -23,7 +23,7 @@ const ContactDetail= ()=>{
                     <div>{email}</div>
                 </div>
             </div>
-            <div><button onClick={()=>{navigate('/');}}>Back to contact list </button></div>
+            <div><button onClick={()=>{navigate('/');}}>Back to contact list </button>hellobuttin</div>
            </div>
        </div>
        </>

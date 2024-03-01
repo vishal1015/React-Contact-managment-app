@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.css';
 import { v4 as uuidv4 } from "uuid";
 import {
   BrowserRouter as Router,
@@ -36,7 +38,7 @@ function App() {
     //  console.log("Retrieved data:", retrivecontacts);
     if (retrivecontacts) setContacts(retrivecontacts);
   }, []);
-  // // wheneverv value changes done useEffect is use to render component agian
+  // // wheneever value changes done useEffect is use to render component agian
   useEffect(() => {
     if (contacts.length)
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));

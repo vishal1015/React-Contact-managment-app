@@ -1,5 +1,5 @@
 import React from "react";
-import { Link ,useNavigate} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import 'font-awesome/css/font-awesome.min.css';
 // not able to import the images 
 import userphoto from "../images/user.png"
