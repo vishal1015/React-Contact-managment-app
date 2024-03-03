@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ContactCard from "./contactCard";
-import "./App.css"
+// import "./App.css"
 //access props
 const ContactList = (props) => {
   console.log(props);

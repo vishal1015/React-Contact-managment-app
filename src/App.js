@@ -7,10 +7,12 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import Header from "./Header";
-import Addcontact from "./Addcontact";
-import ContactList from "./ContactList";
-import ContactDetail from "./ContactDetail";
+import Header from "./components/Header";
+import Addcontact from "./components/Addcontact";
+import ContactList from "./components/ContactList";
+import ContactDetail from "./components/ContactDetail";
+import LoginPage from "./components/Login";
+import SignUpPage from "./components/Signup";
 import "./App.css";
 function App() {
   const LOCAL_STORAGE_KEY = "contacts"; // key for using local storage
@@ -49,8 +51,9 @@ function App() {
       <Router>
         <Header />
         <Routes>
+          <Route path="/" element={<SignUpPage />} />
           <Route
-            path="/"
+            path="/home"
             element={
               <ContactList
                 contacts={contacts}
@@ -58,6 +61,7 @@ function App() {
               />
             }
           />
+          <Route path="/login" element={<LoginPage />} />
           <Route
             path="/add"
             element={<Addcontact addcontactHandler={addcontactHandler} />}
